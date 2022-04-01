@@ -1,0 +1,80 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #181818;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.sideMenu{
+    width: 15%;
+    background-color: #212121;
+    padding: 0 10px 0 0;
+}
+.videos{
+    width: 85%;
+    display: flex;
+    padding: 10px;
+}
+header{
+    padding: 10px 20px;
+    height: 90px;
+    background-color: #212121;
+}
+p{
+    margin: 2px 0;
+}
+.videoCard{
+    width: 23%;
+    background-color: #181818;
+    margin: 5px 10px;
+    height: 100%;
+}
+.videoCard:hover{
+    transform: scale(1.1);
+    background: #212121;
+    padding: 0 10px 10px;
+}
+.videoImg{
+    width: 100%;
+}
+.info{
+    display: flex;
+    margin-top: 5px;
+    padding: 0 15px 0 0;
+}
+.profileImg{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 40px;
+}
+.name{
+    font-weight: 600;
+    font-size: 15px;
+}
+.channel{
+    font-size: 14px;
+}
+.views{
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    padding: 20px;
+    font-size: 14px;
+}
+i{
+    color: white;
+    margin-right: 10px;
+}
+.line{
+    background-color: rgba(255, 255, 255, 0.247);
+    width: 100%;
+    height: 0.1px;
+}
