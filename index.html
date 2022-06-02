@@ -7,123 +7,399 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/567d4e92b4.js" crossorigin="anonymous"></script>
-    <title>Youtube</title>
+    <title>YouTube</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 </head>
 
 <body>
     <header>
-        <img src="assets/youtube.png" alt="" width="40">
+        <div class="menuLogo">
+            <i class="fa-solid fa-bars menu"></i>
+            <div class="logo">
+                <img src="assets/logo.png" alt="" width="100">
+            </div>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Buscar" id="search">
+            <i class="fa-solid fa-magnifying-glass iconSearch"></i>
+            <i class="fa-solid fa-microphone iconMicro"></i>
+        </div>
+        <div class="userBox">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-table-cells-large"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
     </header>
     <div class="container">
         <div class="sideMenu">
             <ul>
-                <li>
-                    <i class="fa-solid fa-house"></i>
+                <li class="st">
+                    <i class="fa-solid fa-house option"></i>
                     Inicio
                 </li>
                 <li>
-                    <i class="fa-solid fa-compass"></i>
+                    <i class="fa-solid fa-compass option"></i>
                     Explorar
                 </li>
                 <li>
-                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-play option"></i>
                     Shorts
                 </li>
                 <li>
-                    <i class="fa-brands fa-youtube-square"></i>
+                    <i class="fa-brands fa-youtube-square option"></i>
                     Suscripciones
                 </li>
                 <div class="line"></div>
                 <li>
-                    <i class="fa-solid fa-swatchbook"></i>
+                    <i class="fa-solid fa-swatchbook option"></i>
                     Biblioteca
                 </li>
                 <li>
-                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <i class="fa-solid fa-clock-rotate-left option"></i>
                     Historial
                 </li>
                 <li>
-                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-play option"></i>
                     Mis videos
                 </li>
                 <li>
-                    <i class="fa-solid fa-clock"></i>
+                    <i class="fa-solid fa-clock option"></i>
                     Ver más tarde
                 </li>
                 <li>
-                    <i class="fa-solid fa-thumbs-up"></i>
+                    <i class="fa-solid fa-thumbs-up option"></i>
                     Videos que me gustan
                 </li>
                 <div class="line"></div>
                 <li>
-                    <i class="fa-solid fa-gear"></i>
+                    <i class="fa-solid fa-gear option"></i>
                     Configuración
                 </li>
                 <li>
-                    <i class="fa-solid fa-flag"></i>
+                    <i class="fa-solid fa-flag option"></i>
                     Denuncias
                 </li>
                 <li>
-                    <i class="fa-solid fa-circle-question"></i>
+                    <i class="fa-solid fa-circle-question option"></i>
                     Ayuda
                 </li>
                 <li>
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-circle-info option"></i>
                     Información
                 </li>
                 <li>
-                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-exclamation option"></i>
                     Enviar sugerencias
+                </li>
+                <div class="line"></div>
+                <li>
+                    <i class="fa-solid fa-swatchbook option"></i>
+                    Biblioteca
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock-rotate-left option"></i>
+                    Historial
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-play option"></i>
+                    Mis videos
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock option"></i>
+                    Ver más tarde
+                </li>
+                <li>
+                    <i class="fa-solid fa-thumbs-up option"></i>
+                    Videos que me gustan
                 </li>
             </ul>
         </div>
-        <div class="videos">
-            <div class="videoCard">
-                <img src="assets/video.jpeg" alt="" class="videoImg">
-                <div class="info">
-                    <img src="assets/profile.jpeg" alt="" class="profileImg">
-                    <div class="text">
-                        <p class="name">Miley Cyrus - Angels Like You (Official Video) Sub. Español + Lyrics</p>
-                        <p class="channel">Miley Cyrus</p>
-                        <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+        <div class="content">
+            <ul class="filters">
+                <li>
+                    Todo
+                </li>
+                <li>
+                    Podcast
+                </li>
+                <li>
+                    Comedia
+                </li>
+                <li>
+                    Conversaciones
+                </li>
+                <li>
+                    Alimentación
+                </li>
+                <li>
+                    Videojuegos
+                </li>
+                <li>
+                    Belleza
+                </li>
+                <li>
+                    Música
+                </li>
+                <li>
+                    Postres
+                </li>
+                <li>
+                    iOS
+                </li>
+                <li>
+                    Moda
+                </li>
+                <li>
+                    Fitness
+                </li>
+            </ul>
+            <div class="videos">
+                <div class="videoCard">
+                    <div class="videoImg fitness"></div>
+                    <div class="info">
+                        <img src="assets/gymV.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Full Body - 20 Minutos!!</p>
+                            <p class="channel">Patry Jordan</p>
+                            <p class="views">20M de visualizaciones ・ Hace 2 años</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="videoCard">
-                <img src="assets/video.jpeg" alt="" class="videoImg">
-                <div class="info">
-                    <img src="assets/profile.jpeg" alt="" class="profileImg">
-                    <div class="text">
-                        <p class="name">Miley Cyrus - Angels Like You (Official Video) Sub. Español + Lyrics</p>
-                        <p class="channel">Miley Cyrus</p>
-                        <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                <div class="videoCard">
+                    <div class="videoImg alimentacion"></div>
+                    <div class="info">
+                        <img src="assets/alimentacion.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Una buena alimentación</p>
+                            <p class="channel">Tips</p>
+                            <p class="views">76257 visualizaciones ・ Hace 3 meses</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="videoCard">
-                <img src="assets/video.jpeg" alt="" class="videoImg">
-                <div class="info">
-                    <img src="assets/profile.jpeg" alt="" class="profileImg">
-                    <div class="text">
-                        <p class="name">Miley Cyrus - Angels Like You (Official Video) Sub. Español + Lyrics</p>
-                        <p class="channel">Miley Cyrus</p>
-                        <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                <div class="videoCard">
+                    <div class="videoImg musica"></div>
+                    <div class="info">
+                        <img src="assets/musica.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Dua Lipa - Future Nostalgia</p>
+                            <p class="channel">Música</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="videoCard">
-                <img src="assets/video.jpeg" alt="" class="videoImg">
-                <div class="info">
-                    <img src="assets/profile.jpeg" alt="" class="profileImg">
-                    <div class="text">
-                        <p class="name">Miley Cyrus - Angels Like You (Official Video) Sub. Español + Lyrics</p>
-                        <p class="channel">Miley Cyrus</p>
-                        <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                <div class="videoCard">
+                    <div class="videoImg podcast"></div>
+                    <div class="info">
+                        <img src="assets/podcast.png" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Podcast</p>
+                            <p class="channel">Podcast</p>
+                            <p class="views">2M de visualizaciones ・ Hace 3 años</p>
+                        </div>
                     </div>
                 </div>
+                <div class="videoCard">
+                    <div class="videoImg videojuegos"></div>
+                    <div class="info">
+                        <img src="assets/videojuegos.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Top Videojuegos</p>
+                            <p class="channel">PS5</p>
+                            <p class="views">200592 visualizaciones ・ Hace 5 meses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg belleza"></div>
+                    <div class="info">
+                        <img src="assets/musica.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Moda según Selena Gómez</p>
+                            <p class="channel">Vogue</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg conversaciones"></div>
+                    <div class="info">
+                        <img src="assets/conversaciones.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Conversaciones en Inglés</p>
+                            <p class="channel">Internet</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg postres"></div>
+                    <div class="info">
+                        <img src="assets/postres.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Como hacer una torta</p>
+                            <p class="channel">Postres</p>
+                            <p class="views">234212 visualizaciones ・ Hace 1 mes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg ios"></div>
+                    <div class="info">
+                        <img src="assets/ios.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Tips de Tecnología</p>
+                            <p class="channel">iOS</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg comedia"></div>
+                    <div class="info">
+                        <img src="assets/comedia.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Stand Up Comedy</p>
+                            <p class="channel">Comedia</p>
+                            <p class="views">2M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg fitness1"></div>
+                    <div class="info">
+                        <img src="assets/fitness1.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Rutina de entrenamiento!</p>
+                            <p class="channel">Fitness</p>
+                            <p class="views">2M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg fitness"></div>
+                    <div class="info">
+                        <img src="assets/gymV.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Full Body - 20 Minutos!!</p>
+                            <p class="channel">Patry Jordan</p>
+                            <p class="views">20M de visualizaciones ・ Hace 2 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg alimentacion"></div>
+                    <div class="info">
+                        <img src="assets/alimentacion.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Una buena alimentación</p>
+                            <p class="channel">Tips</p>
+                            <p class="views">76257 visualizaciones ・ Hace 3 meses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg musica"></div>
+                    <div class="info">
+                        <img src="assets/musica.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Dua Lipa - Future Nostalgia</p>
+                            <p class="channel">Música</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg podcast"></div>
+                    <div class="info">
+                        <img src="assets/podcast.png" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Podcast</p>
+                            <p class="channel">Podcast</p>
+                            <p class="views">2M de visualizaciones ・ Hace 3 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg videojuegos"></div>
+                    <div class="info">
+                        <img src="assets/videojuegos.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Top Videojuegos</p>
+                            <p class="channel">PS5</p>
+                            <p class="views">200592 visualizaciones ・ Hace 5 meses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg belleza"></div>
+                    <div class="info">
+                        <img src="assets/musica.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Moda según Selena Gómez</p>
+                            <p class="channel">Vogue</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg conversaciones"></div>
+                    <div class="info">
+                        <img src="assets/conversaciones.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Conversaciones en Inglés</p>
+                            <p class="channel">Internet</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg postres"></div>
+                    <div class="info">
+                        <img src="assets/postres.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Como hacer una torta</p>
+                            <p class="channel">Postres</p>
+                            <p class="views">234212 visualizaciones ・ Hace 1 mes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg ios"></div>
+                    <div class="info">
+                        <img src="assets/ios.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Tips de Tecnología</p>
+                            <p class="channel">iOS</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg comedia"></div>
+                    <div class="info">
+                        <img src="assets/comedia.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Stand Up Comedy</p>
+                            <p class="channel">Comedia</p>
+                            <p class="views">2M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoCard">
+                    <div class="videoImg fitness1"></div>
+                    <div class="info">
+                        <img src="assets/fitness1.jpeg" alt="" class="profileImg">
+                        <div class="text">
+                            <p class="name">Miley Cyrus - Angels Like You (Official Video) Sub. Español + Lyrics</p>
+                            <p class="channel">Miley Cyrus</p>
+                            <p class="views">4M de visualizaciones ・ Hace 1 año</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
 </body>
 
 </html>

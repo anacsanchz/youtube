@@ -1,80 +1,396 @@
-body{
+body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
     background-color: #181818;
     color: white;
 }
-.container{
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 7px;
+}
+i {
+    color: white;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+/* Navbar */
+
+header {
+    padding: 10px 20px;
+    height: 40px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.menuLogo {
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.search {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userBox {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logoText {
+    font-size: 22px;
+}
+
+#search {
+    width: 50%;
+    background-color: #121212;
+    height: 40px;
+    border: 0.2px solid #313131;
+    padding: 0 10px;
+}
+
+.iconSearch {
+    width: 55px;
+    height: 40px;
+    color: white;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconMicro {
+    width: 40px;
+    height: 40px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.container {
     display: flex;
 }
-.sideMenu{
+
+/* Menú Lateral */
+
+.sideMenu {
     width: 15%;
     background-color: #212121;
     padding: 0 10px 0 0;
+    position: fixed;
+    overflow-y: scroll;
+    margin-top: 60px;
+    height: 100vh;
+    z-index: 2;
 }
-.videos{
-    width: 85%;
-    display: flex;
-    padding: 10px;
+
+.sideMenu::-webkit-scrollbar {
+    width: 6px;
 }
-header{
-    padding: 10px 20px;
-    height: 90px;
+
+/* .sideMenu::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} */
+
+.sideMenu::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 7px;
+}
+.option{
     background-color: #212121;
 }
-p{
+.option:hover{
+    background-color: rebeccapurple;
+}
+
+/* .sideMenu::-webkit-scrollbar-thumb:hover {
+    display: block;
+} */
+
+.line {
+    background-color: rgba(255, 255, 255, 0.247);
+    width: 100%;
+    height: 0.1px;
+}
+
+/* Videos */
+
+.content {
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 60px;
+}
+
+.videos {
+    display: flex;
+    padding: 10px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+
+.st {
+    padding-top: 0;
+}
+
+p {
     margin: 2px 0;
 }
-.videoCard{
+
+/* Video Card */
+
+.videoCard {
     width: 23%;
     background-color: #181818;
     margin: 5px 10px;
     height: 100%;
 }
-.videoCard:hover{
+
+.videoCard:hover {
     transform: scale(1.1);
     background: #212121;
-    padding: 0 10px 10px;
 }
-.videoImg{
+
+.videoImg {
     width: 100%;
+    height: 200px;
 }
-.info{
+
+.info {
     display: flex;
     margin-top: 5px;
     padding: 0 15px 0 0;
 }
-.profileImg{
+
+.profileImg {
     width: 30px;
     height: 30px;
     margin-right: 10px;
     border-radius: 40px;
 }
-.name{
+
+.name {
     font-weight: 600;
     font-size: 15px;
 }
-.channel{
+
+.channel {
     font-size: 14px;
 }
-.views{
+
+.views {
     font-size: 14px;
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
 }
-li{
-    padding: 20px;
+
+li {
+    padding: 19px;
     font-size: 14px;
 }
-i{
-    color: white;
-    margin-right: 10px;
-}
-.line{
-    background-color: rgba(255, 255, 255, 0.247);
+
+
+
+/* Menú de filtros */
+
+.filters {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 0.4px solid #313131;
+    border-bottom: 0.4px solid #313131;
+    margin: 0;
+    background-color: #212121;
+    position: fixed;
     width: 100%;
-    height: 0.1px;
+
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.filters li {
+    background-color: #313131;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 0.5px solid #464545;
+    margin: 0 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    .videoCard {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .sideMenu {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .filters {
+        display: none;
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+
+    .videoCard {
+        width: 45%;
+    }
+
+    .userBox {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .menuLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: -25px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .videoCard {
+        width: 95%;
+    }
+}
+
+
+/* Videos variados */
+
+.fitness {
+    background-image: url(../assets/gymvirtual.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.podcast {
+    background-image: url(../assets/podcast.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.alimentacion {
+    background-image: url(../assets/alimentacion.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.musica {
+    background-image: url(../assets/musica.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.videojuegos {
+    background-image: url(../assets/videojuegos.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.belleza {
+    background-image: url(../assets/belleza.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conversaciones {
+    background-image: url(../assets/conversaciones.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.postres {
+    background-image: url(../assets/postres.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ios {
+    background-image: url(../assets/ios.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comedia {
+    background-image: url(../assets/comedia.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fitness1 {
+    background-image: url(../assets/fitness1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
